@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #181818;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23ee1111' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+    font-size:16px ;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+.conteiner{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+/*NAVEGACION*/
+.navegacion{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding:20px 0;
+    background:grey;
+}
+.logo{
+    width:50px;
+    margin-left: 20px;
+}
+.barra_nav {
+    display: flex;
+}
+.barra_nav li{
+    padding:10px 20px;
+}
+.barra_nav li :hover{
+    border-bottom: 3px solid white;
+}
+.nav_menu{
+    margin-right: 10px;
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 2rem;
+}
+
+/*CABECERA*/
+.header{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    background: url(img/showcase2.jpg) no-repeat center/cover; /*CENTRA LA IMAGEN*/
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*ALINEA EL CONTENIDO EN EL CENTRO*/
+    justify-content: flex-end;
+    border: solid 3px grey;
+    border-radius: 30px;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background: #262626;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+.btn:hover{
+    opacity: .6;
+}
+.header h2, header p{
+    margin:10px
+}
+
+/*TERCERA SECCION*/
+.tercera{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /*ESPACIAMIENTO*/
+    margin: 10px;
+}
+
+.tercera img{
+    width: 100%;
+    height: 180px;
+    margin-top: 10pxs;
+    border: solid 5px grey;
+    
+}
+.tercera h3{
+    text-align: center;
+    margin: 5px;
+
+}
+.tercera a{
+    padding: 5px 90px;
+    text-align-last: center;
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+.tercera a:hover{
+    border-bottom: 3px solid white;
+}
+/*CUARTA*/
+.cuarta{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    background: url(img/tech-red.jpg) no-repeat center/cover; /*CENTRA LA IMAGEN*/
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*ALINEA EL CONTENIDO EN EL CENTRO*/
+    justify-content: flex-end;
+    border: solid 3px grey;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+.cuarta h2, .cuarta p{
+    margin:10px
+}
+.cuarta h2 ,.cuarta p {
+    margin:10px
+}
+
+
+/*SEXTA*/
+.sexta{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    background: url(img/image-five.jpg) no-repeat center/cover; /*CENTRA LA IMAGEN*/
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*ALINEA EL CONTENIDO EN EL CENTRO*/
+    justify-content: flex-end;
+    border: solid 3px grey;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+.sexta h2, .sexta p{
+    margin:10px
+}
+
+
+/*REDES SOCIALES*/
+.redes{
+    margin: 50px;
+    
+}
+.redes p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.redessociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redessociales a{
+    margin:30px;
+}
+.redessociales a i{
+    font-size: 3rem;
+}
+footer{
+    width: 100%;
+    height: 210px;
+    background: grey;
+    padding: 30px;
+}
+.footer{
+    background: grey;
+    color: white;
+    font-size: 12px;
+    padding: 35px 0;
+} 
+.piedepagina{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/*CENTRA LAS COLUMNAS*/
+    gap: 5px;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+
+@media(max-width:700px){
+    .tercera{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; /*ESPACIAMIENTO*/
+        margin: 10px;
+    }
+   
+    
+    
+}
+@media(max-width: 530px){
+    .navegacion ul.barra_nav{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: grey;
+        height: 100%;
+        transform: translate(-400px);
+        padding: 30px;
+        opacity: 0.7;
+    }
+    .navegacion ul.barra_nav.show{
+        transform: translate(-20px);
+        transition: transform.7s ease-in-out;
+    }
+    .navegacion ul.barra_nav li{
+        padding: 20px;
+        font-size: 14px;
+    }
+    .barra_nav li:hover{
+        border-bottom:  solid 2px white;
+    }
+    .barra_nav ul.nav_menu i.nav_menu{
+        margin-right: 50px;
+    }
+    .tercera{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; /*ESPACIAMIENTO*/
+        margin: 10px;
+    }
+    .tercera a{
+        text-align: center;
+
+    }
+    .baner{
+        width: 100%;
+        background: url(img/tech-red.jpg);
+        height: 550px;
+        padding: 30px;
+        border: solid 3px grey;
+        border-radius: 30px;
+    }
+  
+    .sexta{
+        width: 100%;
+        height: 450px;
+        background: url(img/image-five.jpg) no-repeat center/cover;
+        margin: solid 3px grey;
+        padding: 30px;
+        border: solid 3px grey;
+        border-radius: 30px;
+    }
+    .sextaseccion a{
+        margin-left: 55px;
+    }
+    footer div ul{
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+        margin: auto 5px;
+    }
+    footer li{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
